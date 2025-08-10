@@ -1,0 +1,64 @@
+{
+    "symptom": "低血压、意识模糊、皮肤湿冷",
+    "symptom_category": "疼痛 | 呼吸困难",
+    "severity_indicators": [
+      "收缩压<90 mmHg",
+      "心率>120次/分",
+      "毛细血管再充盈时间>2秒",
+      "意识水平下降（如GCS评分降低）"
+    ],
+    "disease": {
+      "name": "创伤失血性休克",
+      "icd_code": "T79.8",
+      "probability": "高",
+      "evidence_level": "A",
+      "urgency_level": "立即",
+      "key_features": [
+        "有明确的创伤史",
+        "持续性低血压",
+        "组织灌注不足的体征（少尿、皮肤花斑）",
+        "进行性贫血"
+      ],
+      "recommended_tests": [
+        {
+          "test_name": "LOINC: 58410-2 | Shock Index [Ratio]",
+          "purpose": "评估休克严重程度，预测死亡风险",
+          "timeframe": "入院即刻",
+          "positive_indicators": ["休克指数（心率/收缩压）≥0.9"],
+          "negative_indicators": ["休克指数<0.5"],
+          "alternative_diseases": ["心源性休克", "感染性休克", "神经源性休克"]
+        },
+        {
+          "test_name": "LOINC: 2075-0 | Lactate [Moles/volume] in Blood",
+          "purpose": "评估组织缺氧和灌注不足的程度",
+          "timeframe": "入院即刻，复苏后2小时复查",
+          "positive_indicators": ["血乳酸>4 mmol/L"],
+          "negative_indicators": ["血乳酸<2 mmol/L"],
+          "alternative_diseases": ["糖尿病酮症酸中毒", "肝衰竭"]
+        },
+        {
+          "test_name": "LOINC: 58413-6 | FAST (Focused Assessment with Sonography for Trauma) Exam",
+          "purpose": "快速评估腹腔、心包是否有游离液体（出血）",
+          "timeframe": "急诊评估期间",
+          "positive_indicators": ["腹腔或心包积液"],
+          "negative_indicators": ["未见明显积液"],
+          "alternative_diseases": ["非创伤性腹腔积液（如肝硬化）"]
+        }
+      ],
+      "treatments": [
+        {
+          "intervention": "控制出血源",
+          "description": "优先处理威胁生命的出血，如压迫止血、骨盆带固定、急诊手术或介入栓塞。"
+        },
+        {
+          "intervention": "限制性液体复苏",
+          "description": "在未控制出血前，维持收缩压在80-90 mmHg（或MAP≥65 mmHg），避免过度稀释凝血因子。"
+        },
+        {
+          "intervention": "损伤控制性复苏（DCR）",
+          "description": "采用成分输血策略（红细胞、血浆、血小板按1:1:1比例输注），积极纠正凝血功能障碍，维持体温，预防酸中毒。"
+        }
+      ],
+      "source": "创伤失血性休克中国急诊专家共识（2023）.pdf"
+    }
+  }

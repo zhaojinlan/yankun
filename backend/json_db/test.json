@@ -1,0 +1,128 @@
+{
+  "symptom": "心悸、胸闷、头晕、乏力、运动耐量下降、部分患者可能表现血栓栓塞或心力衰竭症状",
+  "symptom_category": "疼痛 | 呼吸困难",
+  "severity_indicators": [
+    "收缩压<90 mmHg或原有血压基础上降低30%以上",
+    "意识改变（烦躁不安、反应迟钝或淡漠、晕厥）",
+    "皮肤湿冷",
+    "尿量减少[<0.5 mL/(kg·h)]",
+    "急性肺水肿",
+    "急性心肌缺血或心肌损伤（静息时持续性胸痛和/或呼吸困难）"
+  ],
+  "disease": {
+    "name": "急性心房颤动",
+    "icd_code": "I48",
+    "probability": "高",
+    "evidence_level": "A",
+    "urgency_level": "紧急",
+    "key_features": [
+      "心律绝对不整",
+      "第一心音强弱不等",
+      "脉搏短拙（脉率<心率）",
+      "心电图显示窦性P波消失，代之以频率350～600次/min的颤动波（f波），RR间期绝对不等"
+    ],
+    "recommended_tests": [
+      {
+        "test_name": "12导联心电图",
+        "purpose": "诊断房颤的主要工具",
+        "timeframe": "立即",
+        "positive_indicators": [
+          "窦性P波消失",
+          "频率350～600次/min的颤动波(f波)",
+          "RR间期绝对不等"
+        ],
+        "negative_indicators": [
+          "窦性P波存在",
+          "规则的心律"
+        ],
+        "alternative_diseases": [
+          "心房扑动",
+          "室上性心动过速"
+        ]
+      },
+      {
+        "test_name": "心肌肌钙蛋白I/T(cTn I/T)",
+        "purpose": "评估心肌损伤，预测病死率和再住院率",
+        "timeframe": "急诊立即",
+        "positive_indicators": [
+          "cTn I/T升高"
+        ],
+        "negative_indicators": [
+          "cTn I/T正常"
+        ],
+        "alternative_diseases": [
+          "急性心肌梗死",
+          "非急性冠状动脉综合征"
+        ]
+      },
+      {
+        "test_name": "BNP/NT-proBNP",
+        "purpose": "评估心力衰竭严重程度和预后",
+        "timeframe": "急诊立即",
+        "positive_indicators": [
+          "BNP或NT-proBNP显著增高"
+        ],
+        "negative_indicators": [
+          "BNP或NT-proBNP正常"
+        ],
+        "alternative_diseases": [
+          "急性心力衰竭",
+          "慢性心力衰竭"
+        ]
+      },
+      {
+        "test_name": "凝血功能全套",
+        "purpose": "评估缺血与出血风险，指导抗凝治疗",
+        "timeframe": "急诊立即",
+        "positive_indicators": [
+          "D-二聚体升高"
+        ],
+        "negative_indicators": [
+          "凝血功能正常"
+        ],
+        "alternative_diseases": [
+          "肺血栓栓塞",
+          "脑卒中"
+        ]
+      },
+      {
+        "test_name": "头部CT平扫",
+        "purpose": "疑似脑卒中时明确诊断",
+        "timeframe": "4.5小时内",
+        "positive_indicators": [
+          "脑部缺血或出血性病变"
+        ],
+        "negative_indicators": [
+          "脑部影像正常"
+        ],
+        "alternative_diseases": [
+          "短暂性脑缺血发作",
+          "其他神经系统疾病"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "intervention": "心室率控制",
+        "description": "静脉给药控制心室率，LVEF≥40%的急性房颤，β-受体阻滞剂、非二氢吡啶类钙通道阻滞剂为首选；左心功能明显降低的患者可静脉使用胺碘酮"
+      },
+      {
+        "intervention": "抗凝治疗",
+        "description": "CHA2DS2-VASc-60评分血栓栓塞风险高、或拟复律的患者均应接受抗凝药物治疗；适合口服抗凝药的非瓣膜性房颤患者，推荐使用NOAC；房颤持续时间不明或≥48h，复律前应充分抗凝3周"
+      },
+      {
+        "intervention": "节律控制",
+        "description": "房颤伴血流动力学不稳定者宜紧急同步直流电复律；药物复律首选胺碘酮；对于少部分房颤心室率难以控制、症状严重的患者，可考虑房室结消融联合起搏治疗"
+      },
+      {
+        "intervention": "可逆性病因处理",
+        "description": "积极处理感染、过度饮酒、咖啡因摄入、腹泻、电解质失衡、药物等因素，以及ACS、AHF、心包填塞、COPD急性发作、肺栓塞、甲状腺功能亢进症等急重症"
+      },
+      {
+        "intervention": "ABC路径管理",
+        "description": "A.抗凝治疗与出血风险管理；B.更好的症状管理（通过药物与非药物措施控制心室率和心律）；C.心血管合并症优化（加强对高血压、心力衰竭等并发症的干预和生活方式管理）"
+      }
+    ],
+    "source": "急性心房颤动中国急诊管理指南（2024）"
+  }
+}

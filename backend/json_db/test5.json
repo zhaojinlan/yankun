@@ -1,0 +1,64 @@
+{
+    "symptom": "意识障碍、头痛、呕吐",
+    "symptom_category": "疼痛 | 神经系统症状",
+    "severity_indicators": [
+      "格拉斯哥昏迷评分（GCS）≤13分",
+      "瞳孔不等大或对光反射消失",
+      "癫痫发作",
+      "呼吸节律异常"
+    ],
+    "disease": {
+      "name": "创伤性颅脑损伤",
+      "icd_code": "S06.9",
+      "probability": "高",
+      "evidence_level": "B",
+      "urgency_level": "紧急",
+      "key_features": [
+        "有明确的头部外伤史",
+        "意识水平进行性下降",
+        "颅内压增高表现（如喷射性呕吐）",
+        "局灶性神经功能缺损"
+      ],
+      "recommended_tests": [
+        {
+          "test_name": "LOINC: 72514-3 | Pain severity - 0-10 verbal numeric rating [Score] - Reported",
+          "purpose": "评估患者疼痛程度，指导镇痛",
+          "timeframe": "入院即刻",
+          "positive_indicators": ["NRS评分≥7分"],
+          "negative_indicators": ["NRS评分≤3分"],
+          "alternative_diseases": ["非创伤性头痛"]
+        },
+        {
+          "test_name": "LOINC: 24627-2 | Head CT scan",
+          "purpose": "快速诊断颅内出血、脑挫裂伤、颅骨骨折等",
+          "timeframe": "入院后30分钟内",
+          "positive_indicators": ["硬膜外/下血肿", "脑内血肿", "弥漫性轴索损伤"],
+          "negative_indicators": ["未见明显异常"],
+          "alternative_diseases": ["脑卒中", "脑肿瘤"]
+        },
+        {
+          "test_name": "LOINC: 11526-1 | Glasgow Coma Scale (GCS) total score",
+          "purpose": "动态评估神经系统功能，判断病情变化",
+          "timeframe": "入院后每30分钟至1小时一次",
+          "positive_indicators": ["GCS评分进行性下降"],
+          "negative_indicators": ["GCS评分稳定或上升"],
+          "alternative_diseases": ["代谢性脑病", "药物中毒"]
+        }
+      ],
+      "treatments": [
+        {
+          "intervention": "维持呼吸与循环",
+          "description": "确保气道通畅，必要时气管插管。维持血氧饱和度>94%，避免低血压（收缩压≥100 mmHg）。"
+        },
+        {
+          "intervention": "降低颅内压",
+          "description": "抬高床头30度，控制性过度通气（PaCO2 30-35 mmHg），使用甘露醇或高渗盐水。"
+        },
+        {
+          "intervention": "预防早期癫痫",
+          "description": "对于重型TBI患者，可预防性使用抗癫痫药物（如苯妥英钠）。"
+        }
+      ],
+      "source": "成人创伤性颅脑损伤院前与急诊诊治中国专家共识.pdf"
+    }
+  }

@@ -1,0 +1,64 @@
+{
+    "symptom": "发热、咳嗽、全身酸痛",
+    "symptom_category": "发热 | 呼吸困难",
+    "severity_indicators": [
+      "持续高热>3天",
+      "呼吸频率>24次/分",
+      "血氧饱和度<93%",
+      "神志改变（如嗜睡、躁动）"
+    ],
+    "disease": {
+      "name": "流行性感冒",
+      "icd_code": "J11.1",
+      "probability": "高",
+      "evidence_level": "B",
+      "urgency_level": "紧急",
+      "key_features": [
+        "流感季节发病",
+        "突发高热、寒战",
+        "显著的全身症状（肌痛、乏力）",
+        "上呼吸道症状（咽痛、咳嗽）"
+      ],
+      "recommended_tests": [
+        {
+          "test_name": "LOINC: 94500-6 | Influenza virus A and B RNA [Presence] in Respiratory specimen by NAA with non-probe detection",
+          "purpose": "确诊流感病毒感染，区分甲乙型",
+          "timeframe": "疑似病例立即进行",
+          "positive_indicators": ["流感病毒核酸检测阳性"],
+          "negative_indicators": ["流感病毒核酸检测阴性"],
+          "alternative_diseases": ["普通感冒", "COVID-19", "支原体肺炎"]
+        },
+        {
+          "test_name": "LOINC: 2336-6 | White Blood Cell Count",
+          "purpose": "辅助判断感染类型",
+          "timeframe": "入院即刻",
+          "positive_indicators": ["白细胞计数正常或降低，淋巴细胞减少"],
+          "negative_indicators": ["白细胞和中性粒细胞显著升高"],
+          "alternative_diseases": ["细菌性肺炎"]
+        },
+        {
+          "test_name": "LOINC: 19001-0 | Chest CT",
+          "purpose": "评估是否合并病毒性肺炎或ARDS",
+          "timeframe": "出现呼吸困难或低氧血症时",
+          "positive_indicators": ["双肺多发磨玻璃影或实变影"],
+          "negative_indicators": ["肺部无明显异常"],
+          "alternative_diseases": ["肺结核", "间质性肺病"]
+        }
+      ],
+      "treatments": [
+        {
+          "intervention": "抗病毒治疗",
+          "description": "重症或高危患者应在发病48小时内启动奥司他韦、帕拉米韦或玛巴洛沙韦治疗。即使超过48小时，重症患者仍应给予治疗。"
+        },
+        {
+          "intervention": "对症支持治疗",
+          "description": "使用对乙酰氨基酚退热镇痛。充分补液，维持水电解质平衡。对于重症肺炎或ARDS，给予氧疗或机械通气。"
+        },
+        {
+          "intervention": "隔离与预防",
+          "description": "确诊或疑似病例应立即隔离。推荐每年接种流感疫苗，特别是高危人群。"
+        }
+      ],
+      "source": "成人流行性感冒诊疗规范急诊专家共识（2022版）.pdf"
+    }
+  }

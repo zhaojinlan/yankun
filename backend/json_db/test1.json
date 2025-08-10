@@ -1,0 +1,149 @@
+{
+    "symptom": "局部疼痛、肿胀、皮肤红斑、水泡或血泡、皮肤坏死破溃、皮下捻发音、皮肤发黑或呈暗红色",
+    "symptom_category": "疼痛 | 皮肤症状 | 发热",
+    "severity_indicators": [
+      "收缩压≤100 mmHg",
+      "SpO2<93%",
+      "水泡或血泡增多/融合",
+      "大片红斑或瘀斑",
+      "皮肤坏死破溃",
+      "皮下捻发音",
+      "皮肤发黑或呈暗红色",
+      "快速进展、加重的肿胀、疼痛或皮肤症状"
+    ],
+    "disease": {
+      "name": "坏死性软组织感染",
+      "icd_code": "L08.8",
+      "probability": "高",
+      "evidence_level": "B",
+      "urgency_level": "紧急",
+      "key_features": [
+        "起病急、病情进展快，致死致残率高",
+        "局部疼痛与体征不匹配（疼痛程度超过外观表现）",
+        "皮肤表现：水泡或血泡、大片红斑或瘀斑、皮肤坏死破溃、皮下捻发音、皮肤发黑或呈暗红色",
+        "全身症状：发热、意识障碍、呼吸衰竭、循环不稳定",
+        "易患人群包括高龄（年龄≥60岁）、酗酒、肥胖、糖尿病、慢性肝病、慢性肾病、使用免疫抑制剂或免疫功能低下、长期卧床等"
+      ],
+      "recommended_tests": [
+        {
+          "test_name": "Double-SR快速筛查评分",
+          "purpose": "急诊快速筛查坏死性软组织感染",
+          "timeframe": "立即",
+          "positive_indicators": [
+            "易患人群（susceptible person）：高龄≥60岁、酗酒、肥胖、糖尿病等",
+            "快速生命体征评估（rapid vital sign assessment）：收缩压≤100 mmHg或SpO2<93%",
+            "严重的皮肤表现（severe skin signs）：水泡或血泡增多/融合、大片红斑或瘀斑等",
+            "快速进展的症状（rapid progress clinic signs）：快速进展的肿胀、疼痛等"
+          ],
+          "negative_indicators": [
+            "无易患因素",
+            "生命体征平稳",
+            "皮肤表现轻微且稳定"
+          ],
+          "alternative_diseases": [
+            "蜂窝织炎",
+            "丹毒",
+            "单纯性皮肤软组织感染"
+          ]
+        },
+        {
+          "test_name": "实验室危险指数评分(LRINEC)",
+          "purpose": "评估坏死性软组织感染可能性",
+          "timeframe": "急诊立即",
+          "positive_indicators": [
+            "C反应蛋白>150 mg/L",
+            "白细胞计数>15.4×10^9/L",
+            "血红蛋白<13.5 g/dL",
+            "血清钠<135 mmol/L",
+            "肌酐>1.6 mg/dL",
+            "血糖>180 mg/dL"
+          ],
+          "negative_indicators": [
+            "各项指标正常或轻微异常"
+          ],
+          "alternative_diseases": [
+            "非坏死性软组织感染",
+            "其他炎症性疾病"
+          ]
+        },
+        {
+          "test_name": "血培养",
+          "purpose": "确定病原体类型",
+          "timeframe": "急诊立即",
+          "positive_indicators": [
+            "培养出革兰阳性菌（如A组链球菌、MRSA）",
+            "培养出革兰阴性菌",
+            "培养出厌氧菌"
+          ],
+          "negative_indicators": [
+            "无菌生长"
+          ],
+          "alternative_diseases": [
+            "其他细菌性感染",
+            "真菌感染"
+          ]
+        },
+        {
+          "test_name": "伤口分泌物培养及药敏试验",
+          "purpose": "确定局部感染病原体及敏感抗生素",
+          "timeframe": "急诊立即",
+          "positive_indicators": [
+            "培养出A组链球菌(GAS)",
+            "培养出嗜水气单胞菌",
+            "培养出MRSA",
+            "混合菌群生长"
+          ],
+          "negative_indicators": [
+            "单一非致病菌生长",
+            "无菌生长"
+          ],
+          "alternative_diseases": [
+            "单纯性伤口感染",
+            "其他特异性感染"
+          ]
+        },
+        {
+          "test_name": "影像学检查（X线、CT或MRI）",
+          "purpose": "评估软组织受累范围及深度",
+          "timeframe": "急诊立即",
+          "positive_indicators": [
+            "软组织内气体影",
+            "筋膜增厚",
+            "肌肉间隙模糊",
+            "广泛软组织水肿"
+          ],
+          "negative_indicators": [
+            "无软组织异常",
+            "仅表浅组织受累"
+          ],
+          "alternative_diseases": [
+            "气性坏疽",
+            "其他深部组织感染"
+          ]
+        }
+      ],
+      "treatments": [
+        {
+          "intervention": "早期评估与处置",
+          "description": "对怀疑NSTIs患者采用Double-SR评分进行急诊快速筛查，Double-SR评分≥1分患者启动NSTIs快速响应小组(NSTIs-RRT)，紧急评估患者意识、呼吸、循环并收住留观病房或抢救室进一步治疗"
+        },
+        {
+          "intervention": "抗感染治疗",
+          "description": "遵循早期、足量、联合的原则经验性使用广谱抗菌药物，包括抗革兰阳性、革兰阴性和厌氧病原体的药物；重症NSTIs或病情进展快，脏器损伤严重患者可选用碳青霉烯类联合糖肽类；GAS感染推荐使用克林霉素联合青霉素治疗；嗜水气单胞菌感染推荐使用多西环素联合环丙沙星或头孢曲松；MRSA感染推荐利奈唑胺、万古霉素、达托霉素或头孢洛林"
+        },
+        {
+          "intervention": "手术清创",
+          "description": "确诊NSTIs患者应尽早进行手术清创，必要时多次清创，直至感染组织完全清除；对于创伤弧菌感染导致的坏死性筋膜炎，可考虑采用暂时性手术管理策略"
+        },
+        {
+          "intervention": "支持治疗",
+          "description": "对于循环不稳定的患者，参考感染性休克相关诊疗指南给予补液、血管活性药物维持血压和组织灌注；对于意识障碍、呼吸衰竭的患者应予呼吸支持；可考虑使用负压封闭引流技术促进伤口愈合"
+        },
+        {
+          "intervention": "多学科协作管理",
+          "description": "组建包括急诊科、外科、重症医学科、感染科等多学科团队，进行综合评估和治疗；对重症患者实施密集监测和及时干预"
+        }
+      ],
+      "source": "坏死性软组织感染临床诊治急诊专家共识"
+    }
+  }

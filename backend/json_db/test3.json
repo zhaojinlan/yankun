@@ -1,0 +1,56 @@
+{
+    "symptom": "肌肉痉挛、牙关紧闭、苦笑面容",
+    "symptom_category": "疼痛 | 发热",
+    "severity_indicators": [
+      "全身性肌肉强直和阵发性痉挛",
+      "呼吸肌受累导致呼吸困难",
+      "高热",
+      "自主神经功能紊乱（如血压波动、心动过速）"
+    ],
+    "disease": {
+      "name": "破伤风",
+      "icd_code": "A35",
+      "probability": "高",
+      "evidence_level": "B",
+      "urgency_level": "紧急",
+      "key_features": [
+        "有外伤史或伤口污染史",
+        "牙关紧闭（锁颌）",
+        "苦笑面容",
+        "角弓反张"
+      ],
+      "recommended_tests": [
+        {
+          "test_name": "LOINC: 777-0 | Wound culture",
+          "purpose": "明确伤口是否存在破伤风梭菌感染",
+          "timeframe": "急诊清创时",
+          "positive_indicators": ["厌氧培养阳性"],
+          "negative_indicators": ["培养阴性"],
+          "alternative_diseases": ["狂犬病", "士的宁中毒", "低钙性抽搐"]
+        },
+        {
+          "test_name": "LOINC: 1751-7 | Magnesium [Moles/volume] in Serum or Plasma",
+          "purpose": "监测硫酸镁治疗过程中的血药浓度，预防毒性反应",
+          "timeframe": "用药期间每6-12小时一次",
+          "positive_indicators": ["血镁浓度维持在2-4 mmol/L"],
+          "negative_indicators": ["血镁浓度>5 mmol/L"],
+          "alternative_diseases": ["重症肌无力", "脑炎"]
+        }
+      ],
+      "treatments": [
+        {
+          "intervention": "清创与抗毒素",
+          "description": "彻底清创，清除坏死组织和异物。立即注射破伤风抗毒素（TAT）或人破伤风免疫球蛋白（HTIG）进行被动免疫。"
+        },
+        {
+          "intervention": "镇静与解痉",
+          "description": "首选苯二氮䓬类药物（如地西泮）控制痉挛。硫酸镁静脉负荷剂量40 mg/kg（>30分钟），维持剂量：体重大于45kg为2g/h，小于45kg为1.5g/h，需监测膝腱反射、呼吸和尿量。"
+        },
+        {
+          "intervention": "主动免疫",
+          "description": "根据患者免疫史，决定是否需要接种破伤风类毒素（Td或Tdap）进行加强免疫。"
+        }
+      ],
+      "source": "成人破伤风急诊预防及诊疗专家共识.pdf"
+    }
+  }

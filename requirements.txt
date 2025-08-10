@@ -1,0 +1,24 @@
+pdfplumber>=0.10.0
+PyPDF2>=3.0.0
+sentence-transformers>=2.2.2,<3.1
+faiss-cpu>=1.7.4
+volcengine>=1.0.195
+langchain>=0.1.13
+pyautogen>=0.2.16
+openai>=1.13.3 
+ragas>=0.3.0
+langchain-huggingface>=0.0.12
+
+# 新增：运行 transformers/sentence-transformers 所需
+transformers<5
+# 建议固定到与上面兼容的稳定版本（CPU 环境），CUDA 可在本机改为 cu 版本索引安装
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1
+
+# 新增：后端服务依赖
+fastapi>=0.110,<1.0
+uvicorn[standard]>=0.22,<1.0
+
+# 新增：显式声明 pydantic v2（项目代码使用 model_validator/Field）
+pydantic>=2.6,<3
