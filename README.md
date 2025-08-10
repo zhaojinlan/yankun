@@ -39,7 +39,7 @@
 
 1. 启动后端服务cd backend
    ```bash
-   uvicorn backend.server:app --reload --port 8000
+   uvicorn backend.server:app --reload --port 3001
    ```
 
 2. 访问 API 文档
@@ -123,7 +123,7 @@ Docter/
 
 
 启动后端：
-cd backend
+ 
 uvicorn backend.server:app --reload --port 8000
 
 启动前端：
@@ -131,3 +131,5 @@ cd frontend
 npm run dev
 
 文件中的test.py是用于评测RAG的示例代码
+
+ps:本项目中暂时删除了向量化模型
